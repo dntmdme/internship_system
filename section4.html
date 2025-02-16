@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="section4.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student's Review Page</title>
+</head>
+<body>
+  
+<!--NavBar-->	
+    <input type="checkbox" id="checkbox">
+	<header class="header">
+        <img src="image/uitm_logo.png">
+       
+         <a href="student.html" class="u-name"><b>Internship</b>System</a>
+
+        <div class="right-links">
+            <label for="checkbox">
+        <i id="nvbtn" class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+            <a href="index.html"> <button class="btn">Logout</button></a>
+		</a>
+    </div> 
+    </header>
+
+<!--Side Bar-->	
+	<div class="body">
+		<nav class="side-bar">
+			<div class="user-p">
+				<img src="image/pfp.jpeg">
+				<h4>Hello, Student</h4>
+			</div>
+            <ul>
+				<li>
+                    <a href="student.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span>Homepage</span>
+                    </a>	
+                </li>
+				<li>
+					<a href="application_form.html">
+						<i class="fa fa-info-circle" aria-hidden="true"></i>
+						<span>Application</span>
+					</a>	
+				</li>
+				<li>
+					<a href="section3.html">
+						<i class="fa fa-comments" aria-hidden="true"></i>
+						<span>Feedback</span>
+					</a>
+				</li>
+				<li>
+					<a href="section4.html">
+						<i class="fa fa-tasks" aria-hidden="true"></i>
+						<span>Tasks & Submissions</span>
+					</a>
+				</li>
+		</nav>
+        <div class="main-box top">
+            <div class="top">
+                <div class="box">
+                    <section class="section1">
+                        <h1>WELCOME</h1>
+                        <p>Hi student, this is the Task & Submission Review Page.</p></section>
+                </div>
+            </div>
+
+<!--task review-->
+<header>
+    <h2>View your assigned tasks and submitted reports.</h2>
+</header>
+
+    <section id="section4">
+    <iframe src="view_tasks.php" width="100%" height="400px" style="border:none;"></iframe>
+</section>
+</body>
+</html>

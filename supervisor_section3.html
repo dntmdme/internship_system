@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assign_task.css">
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supervisor Page</title>
+</head>
+<body>	  
+<!--NavBar-->	
+<input type="checkbox" id="checkbox">
+<header class="header">
+	<img src="image/uitm_logo.png">
+   
+	 <a href="supervisor.html" class="u-name"><b>Internship</b>System</a>
+
+	<div class="right-links">
+		<label for="checkbox">
+	<i id="nvbtn" class="fa fa-bars" aria-hidden="true"></i>
+	</label>
+		<a href="index.html"> <button class="btn">Logout</button></a>
+	</a>
+</div> 
+</header>
+
+<!--Side Bar-->	
+<div class="body">
+	<nav class="side-bar">
+		<div class="user-p">
+			<img src="image/pfp.jpeg">
+			<h4>Hello, Supervisor</h4>
+		</div>
+        <ul>
+			<li>
+				<a href="supervisor.html">
+					<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+					<span>Manage students</span>
+				</a>	
+			</li>
+			<li>
+				<a href="supervisor_section3.html">
+					<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+					<span>Assign Task</span>
+				</a>
+			</li>
+			<li>
+				<a href="supervisor_section4.html">
+					<i class="fa fa-user" aria-hidden="true"></i>
+					<span>Review Tasks</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="main-box top">
+		<div class="top">
+			<div class="box">
+				<section class="section1">
+					<h1>WELCOME</h1>
+					<p>Hi Supervisor, this is Assign Task page.</p></section>
+			</div>
+		</div>
+
+ <!-- Assign Task Section -->
+        <header>
+			<h2>Assign task to interns</h2>
+        </header>
+
+        <div class="section4">
+
+			<form action="assign_task.php" method="POST" enctype="multipart/form-data">
+
+            <div class="form-group">
+				<label>Student Email:</label>
+				<input type="email" name="student_email" required><br>
+            </div>
+
+            <div class="form-group">
+				<label>Task Name:</label>
+				<input type="text" name="task_name" required><br>
+            </div>
+
+            <div class="form-group">
+				<label>Due Date:</label>
+				<input type="date" name="due_date" required><br>
+            </div>
+
+            <div class="form-group">
+				<label>Upload Task File:</label>
+				<input type="file" name="task_file"><br>
+            </div>
+
+				<button type="submit">Assign Task</button>
+			</form>
+		</div>
+    </body>
+</html>
